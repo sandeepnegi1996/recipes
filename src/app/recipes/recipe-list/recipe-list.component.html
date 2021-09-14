@@ -3,6 +3,7 @@
         <button class="btn btn-success">New Recipe</button>
     </div>
 </div>
+<hr>
 <div class="row">
     <div class="col-sx-12">
         <a href="#" class="list-group-item clearfix" *ngFor="let recipe of recipes">
@@ -11,6 +12,8 @@
                 <p class="list-group-item-text">Desscription</p>
             </div>
             <span class="pull-right">
+                <!--here we are using string interpolation 
+                or we can use the property binding and bind the property of src to the image path-->
                 <img src="{{recipe.imagePath}}" alt="" srcset="" class="img-responsive" style="max-height: 50px;">
             </span>
         </a>
